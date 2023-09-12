@@ -7,6 +7,7 @@
 </head>
 <body>
 <?php 
+$xuat_ten='';
 if (isset($_POST["ten"])) {
     $ten = $_POST["ten"];
     $xuat_ten = "Chào bạn " . $ten;
@@ -25,7 +26,7 @@ if (isset($_POST["ten"])) {
         </tr>
         <tr>
             <td colspan="2">
-                <label><?php echo isset($xuat_ten) ? $xuat_ten : ''; ?></label>
+                <label><?php echo $xuat_ten ; ?></label>
             </td>
         </tr>
         <tr>
